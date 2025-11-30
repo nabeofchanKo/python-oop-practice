@@ -36,6 +36,7 @@ cd python-oop-practice
 # Run specific modules
 python drug_data.py
 
+```
 
 ## 💻 Author
 **Applied AI Engineer (Candidate)** Specializing in optimizing Business Operations (Pharma & Logistics) with LLMs and Python.
