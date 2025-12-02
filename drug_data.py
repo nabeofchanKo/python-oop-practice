@@ -34,25 +34,25 @@ class Drug:
         
         return f"[{self.drug_id}] {self.name} : {status}"
     
-def get_price(self) -> float:
+    def get_price(self) -> float:
+            """
+            Returns the private attribute 'price'.
+            プライベート属性である薬価を返します。
+            """
+            # Just return price
+            return self.__price
+        
+    def set_price(self, new_price: float) -> None:
         """
-        Returns the private attribute 'price'.
-        プライベート属性である薬価を返します。
+        Sets a new value to the private attribute 'price'.
+        薬価のプライベート属性に新しい値を設定します。
         """
-        # Just return price
-        return self.__price
-    
-def set_price(self, new_price: float) -> None:
-    """
-    Sets a new value to the private attribute 'price'.
-    薬価のプライベート属性に新しい値を設定します。
-    """
-    # Show an error if new_price < 0
-    # 0未満（マイナス）なら警告
-    if new_price < 0:
-        print("Error: Price cannot be negative.")
-    else:
-        self.__price = new_price
+        # Show an error if new_price < 0
+        # 0未満（マイナス）なら警告
+        if new_price < 0:
+            print("Error: Price cannot be negative.")
+        else:
+            self.__price = new_price
 
 # --- Execution Block (実行ブロック) ---
 
