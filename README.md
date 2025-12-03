@@ -13,10 +13,10 @@ Instead of generic textbook examples, I implement OOP concepts by modeling real-
 I am focusing on the following core concepts of software engineering:
 
 - [x] **Classes & Objects**: Defining business entities (`Drug`, `Shipment`).
-- [ ] **Encapsulation**: Protecting sensitive data (e.g., patient IDs, pricing).
-- [ ] **Inheritance**: Creating specialized models (e.g., `Vaccine` inheriting from `Drug`).
-- [ ] **Polymorphism**: Unified interfaces for diverse workflows.
-- [ ] **Type Hinting & Docstrings**: Writing maintainable, professional code.
+- [X] **Encapsulation**: Protecting sensitive data (e.g., patient IDs, pricing).
+- [X] **Inheritance**: Creating specialized models (e.g., `Vaccine` inheriting from `Drug`).
+- [X] **Polymorphism**: Unified interfaces for diverse workflows.
+- [X] **Type Hinting & Docstrings**: Writing maintainable, professional code.
 
 ## 📂 Code Examples
 
