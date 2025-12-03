@@ -1,5 +1,6 @@
 # Python OOP Practice: Pharma & Logistics Models
 (Pythonオブジェクト指向プログラミング練習: 製薬・物流モデル)
+[![Pharma Inventory CI](https://github.com/nabeofchanKo/python-oop-practice/actions/workflows/test.yml/badge.svg)](https://github.com/nabeofchanKo/python-oop-practice/actions/workflows/test.yml)
 
 ## 📌 Overview
 This repository documents my journey in mastering **Object-Oriented Programming (OOP)** in Python.
