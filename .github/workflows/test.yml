@@ -1,0 +1,31 @@
+name: Pharma Inventory CI
+
+# When?
+# いつ動くか？ -> "main" ブランチに push された時
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# Do what?
+# 何をするか？
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # GitHubが用意した仮想マシン(Linux)を使う
+
+    steps:
+    # 1. Check out code(s) from GitHub
+    # 1. GitHubからコードをチェックアウト(取得)する
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # 2. Build image
+    # 2. Dockerイメージをビルドする
+    - name: Build Docker image
+      run: docker build -t pharma-inventory .
+
+    # 3. Run a container and tests
+    # 3. コンテナを起動してテストを実行する
+    - name: Run Tests
+      run: docker run pharma-inventory pytest
